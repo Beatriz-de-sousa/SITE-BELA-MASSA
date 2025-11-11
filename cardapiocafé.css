@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Faz com que padding e border seja incluidos no tamanho total*/
+    
+}
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    text-align: center;
+    background-color: #f8f3e657;
+    background-image: url('Café.JPEG');
+    color: #4a2c2a21;
+
+}
+
+.Cardapio-titulo {
+text-align: center;
+    font-size: 2.8em;
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    margin: 40px 0 20px;
+
+}

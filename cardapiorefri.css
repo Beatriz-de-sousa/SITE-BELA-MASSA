@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Faz com que padding e border seja incluidos no tamanho total*/
+    
+}
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    text-align: center;
+    background-color: #ffe9e9bd;
+    background-image: url('refri.JPEG');
+    color: #ffe1de;
+}
+
+.Titulo-refrigerantes {
+text-align: center;
+    font-size: 2.8em;
+    color: #fffefe;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    margin: 40px 0 20px;
+
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANIFICADORA BELA MASSA</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="shortcut icon" href="favicon-32x32.png">
+</head>
+<body>
+    <!--CABEÇALHO DO SITE-->
+    <header class="header">
+        <!--CONTAINER PARA CENTRALIZAR O SITE-->
+        <div class="container logo-container">
+            <!--Logo do hotel-->
+            <div class="text-logo">
+                <h1 class="logoh1">BELA MASSA</h1>
+                <p class="subtitulo">|Pani e gastronômia</p>
+        </div>
+         <img src="logo certo.png" alt="logo" class="logo-img">
+        </div>
+           
+        <!--MENU DE NAVEGAÇÃO-->
+        
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#home"></a></li>
+                <li class="dropdown"> 
+                    <a href="#home" class="dropbtn">Inicio</a> <!--é o botão que ativa o menu suspenso.-->
+                    <div class="dropdown-content"> <!-- =Conteúdo do menu suspenso-->
+                        
+                        
+               
+                <li class="dropdown">
+                    <a href="sobre.html" class="dropbtn">Sobre</a>
+                    <div class="dropdown-content"> <!-- =Conteúdo do menu suspenso-->
+                        
+                  <!--Menu suspenso-->
+                <li class="dropdown">
+                    <a href="menu.html" class="dropbtn">Menu</a>
+                    <div class="dropdown-content"> <!-- =Conteúdo do menu suspenso-->
+                        
+                        
+
+
+                    </div>  
+                </li>
+                <li><a href="#products"></a></li> <!--A tag <a> é a tag âncora, e o href que decice aonde vai levar o Usuário-->
+                <li class="dropdown"> <!--Identifica que terá um menu suspenso-->
+                    <a href="menu.html" class="dropbtn">Cestas e kits</a>
+                    <div class="dropdown-content"> <!-- =Conteúdo do menu suspenso-->
+                        
+               
+                <li class="dropdown">
+                    <a href="#Locationandcontacts" class="dropbtn">Localização </a>
+                    <div class="dropdown-content"></div>
+
+
+                    </div>  
+                </li>
+                
+<li>
+  <a href="javascript:void(0)" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+  </a>
+</li>
+              
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <!--SEÇÃO PRINCIPAL (HERO)-->
+    <section id="home" class="hero"> <!--Section=Seção-->
+        <div class="hero-content">
+            <!--TITULO PRINCIPAL DA PAGINA-->
+            <h1 class="hero-content"> Bem-vindo (a) a panificadora e espaço gastronômico Bela massa</h1>
+            <!--Subtitulo-->
+            <p class="hero-subtitle">Faz a vida mais gostosa</p>
+
+            <!--Botão de chamada para ação-->
+            <a href="https://wa.me/5561984033833?text=Olá,%20gostaria%20de%20fazer%20uma%20reserva!" class="btn-primary"> Faça sua reserva</a>
+            
+        </div>
+    </section>
+
+    
+
+         
+            </div>
+        </div>
+    </section>
+
+
+   
+
+  
+
+            <!--Grid de menu-->
+            <div class="menu-grid">
+                
+
+        
+    
+                
+            
+                            
+                          
+
+                            
+                        
+
+
+
+<div id="cart" class="cart">
+    <div class="cart-header">
+        <h2>🛒 Carrinho</h2>
+        <button onclick="toggleCart()">Fechar</button>
+    </div>
+    <div id="cart-items"></div> <!-- Onde os itens vão aparecer -->
+   
+    <p>>Total: R$ <span id="cart-total">0.00</span></p>
+</div>
+    </div>
+</div>
+</section>
+
+            </div>
+        </div>
+     
+        
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Endereço: Via Panoramica, 60123 Ancona AN, Itália</p>
+        <p>Telefone: (619) 83456-5432</p>
+        <p>Redes sociais: @belamassapanificadora</p>
+    </footer>
+
+
+
+<script src="novoscripts.js"></script>
+</body>
+</html>

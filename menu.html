@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapios da pagina</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header class="header">
+    <div class="container logo-container">
+      <div class="text-logo">
+        <h1 class="logoh1">BELA MASSA</h1>
+        <p class="subtitulo">| Pani e Gastronomia |</p>
+      </div>
+      <img src="logo certo.png" alt="logo" class="logo-img">
+    </div>
+         <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#home"></a></li>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">Inicio</a>
+                    
+                    <div class="dropdown-content"> <!-- =Conteúdo do menu suspenso-->
+                        
+                        
+               
+                <li class="dropdown">
+                    <a href="sobre.html" class="dropbtn">Sobre</a> <!--é o botão que ativa o menu suspenso.-->
+                    <div class="dropdown-content"> <!-- =Conteúdo do menu suspenso-->
+                        
+                  <!--Menu suspenso-->
+                <li class="dropdown">
+                    <a href="menu.html" class="dropbtn">Menu</a>
+                    <div class="dropdown-content"> <!-- =Conteúdo do menu suspenso-->
+                        
+       <a href="#entraces">Entradas</a>
+                <a href="#breads">Pães</a>
+                <a href="#pastas">Massas</a>
+                <a href="#drinks">Bebidas</a>
+                
+
+                    </div>  
+                
+
+                            <li><a href="#products"></a></li> <!--A tag <a> é a tag âncora, e o href que decice aonde vai levar o Usuário-->
+                            <li class="dropdown"> <!--Identifica que terá um menu suspenso-->
+                                <a href="cestas.html" class="dropbtn">Cestas e kits</a>
+                                <div class="dropdown-content"> <!-- =Conteúdo do menu suspenso-->
+
+                                    <li><a href="#Locationandcontacts"></a></li>
+                                    <li class="dropdown">
+                                        <a href="localização.html" class="dropbtn">Localização</a>
+                                        <div class="dropdown-content"></div>
+
+       
+
+        
+    
+      </ul> 
+    </nav>
+  </header>
+  
+                    
+
+               
+                     <!--Menu -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Menu</h2>
+            
+        
+            
+
+            <!--Grid de menu-->
+            <div class="menu-grid">
+                <!--Seção das entradas-->
+    <section id="entraces" class="entraces">
+        <div class="menu-header">
+            <h2 class="section-title">Nossas entradas</h2>
+            
+        </div>
+        
+
+            
+            <!--Grid de entradas-->
+            <div class=" entraces-grid">
+
+                <!--Entrada1-->
+                <div class="entraces-card">
+                    <img src="MINI-SANDUICHE.jpg" alt="Mini sanduíche">
+                    <div class="entraces-info">
+                        <h3>Mini sanduíche</h3>
+                        <p>Uma variação de: Queijo e presunto, frango, peito de peru e atum.</p>
+                        <div class="entraces-price"> 20,00R$</div>
+                    </div>
+                </div>
+                <!--Entrada2-->
+                <div class="entraces-card">
+                    <img src="Pao de queijo2.jpg" alt="Pão de queijo mineiro">
+                    <div class="entraces-info">
+                        <h3>Pão de queijo</h3>
+                        <p>Clássico mineiro, crocante por fora e macio por dentro. Feito com queijo de verdade e aquele sabor caseiro que derrete na boca.</p>
+                        <div class="entraces-price"> 8,00R$ </div>
+                        <button onclick="addToCart ('Pão de queijo', 8.00)">Adicionar ao carrinho</button>
+                         <div id="entraces" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeModal('entradas')"
+                                            >&times;</span>
+                                             <div class="entraces-grid"></div>
+                                        </div>
+                         </div>
+                        
+                    </div>
+                </div> 
+
+                <!--Entrada 3 -->
+                <div class="entraces-card">
+                    <img src="Croassaint.jpg" alt="Croassaint">
+                    <div class="entraces-info">
+                        <h3>Croassaint</h3>
+                        <p>Massa leve e folheada.Preparado com manteiga de qualidade e técnica tradicional francesa, nosso croissant tem camadas finas e sabor amanteigado irresistível.</p>
+                        <div class="entraces-price">17,00R$ </div>
+                        
+                        </div>
+
+                </div>
+            </div>
+    </section>
+
+
+
+     <!--Seção dos pães-->
+            <section id="breads" class="breads">
+                <div class="menu-header">
+                    <h2 class="section-title">Nossos pães</h2>
+                </div>
+                
+
+                    <!--Grid de pães-->
+                    <div class="breads-grid">
+                    
+            
+
+                        <!--Primeira Opção-->
+                        <div class="breads-card">
+                        <img src="Baguete.jpg" alt="Baguete Artesanal">
+                        <div class="breads-info">
+                            <h3>Baguete Artesanal</h3>
+                            <p>Crocante por fora, macia por dentro e com aquele sabor marcante do pão feito à mão. Nossa baguete é preparada com fermentação natural e ingredientes selecionados, perfeita para acompanhar patês, queijos ou simplesmente saborear com manteiga ainda quente.</p>
+                            <div class="breads-price">17,00R$</div>
+                        </div>
+                    </div>
+                    
+                        
+
+                        <!--Segunda opção-->
+                            <div class="breads-card">
+                                <img src="pão francês.webp" alt="Pão françês">
+                                <div class="breads-info">
+                                    <h3>Pão Francês</h3>
+                                    <p> Pão Francês
+Tradicional e irresistível, nosso pão francês é assado diariamente para garantir casquinha crocante e miolo leve. Feito com farinha especial e aquele toque de padaria artesanal que deixa qualquer café da manhã mais saboroso.
+                                    </p>
+                                    <div class="breads-price">25,00kg </div>
+                                </div>
+                            </div>
+
+                            <!--Terceira opção-->
+                            <div class="breads-card">
+                                <img src="[3] Pão Doce com Açúcar.jpg" alt="Pão de açucar">
+                                <div class="breads-info">
+                                    <h3>Pão de Açucar</h3>
+                                    <p>Macio, levemente adocicado e coberto com uma fina camada de açúcar cristal, o Pão de Açúcar é perfeito para acompanhar um café fresquinho. Feito com massa leve e amanteigada, ele traz aquele sabor caseiro que lembra o cheirinho das manhãs na padaria.</p>
+                                    <div class="breads-price">8,00R$ </div>
+                                </div>
+                            </div>
+                    </div>
+                                        
+            </section>
+                            
+                            <!--Seção de massas-->
+                            <section id="pastas" class="pastas">
+                            <div class="menu-header">
+                            <h2 class="section-title">Nossas massas</h2>
+                            </div>
+                            
+
+                            <!--Grid de massas-->
+                            <div class="pastas-grid">
+                                
+                                <!--Primeira opção-->
+                                <div class="pastas-card">
+                                    
+                                    <img src="pexels-fariphotography-905847.jpg" alt="Pizzas">
+                                    <div class="pastas-info">
+                                        <h3>Pizzas premium</h3>
+                                        <p>Massa crocante por fora, macia por dentro, coberta com ingredientes frescos e irresistíveis. Cada fatia é uma explosão de sabor</p>
+                                        <div class="pastas-price">49,99 R$ </div>
+                                        
+                                    </div>
+                                </div>
+                    
+                            
+                                
+                                <!--Opção dois-->
+                                <div class="pastas-card">
+                                    <img src="images.jpg" alt="Macarrões">
+                                    <div class="pastas-info">
+                                        <h3>MACARRÕES</h3>
+                                        <p>Massas cozidas no ponto perfeito, combinadas com molhos irresistíveis e ingredientes frescos. Cada prato é feito com cuidado para trazer sabor, aroma e aquela sensação de comida caseira.</p>
+                                        <div class="pastas-price">28,99 R$ </div>
+                                    </div>
+                                </div>
+
+                                <!--Opção três-->
+                                <div class="pastas-card">
+                                <img src="lasanha.jpg" alt="Lasanha">
+                                <div class="pastas-info">
+                                    <h3>Lasanhas</h3>
+                                    <p>Massa leve, molhos cremosos e queijo gratinado — nossas lasanhas são feitas para aquecer o coração e conquistar o paladar.</p>
+                                    <div class="pastas-price">26,99 R$</div>
+                                </div>
+                                </div>
+                            </div>
+                            </section>
+                            <!--SEÇÃO DAS BEBIDAS-->
+                            <section id="drinks" class="drinks">
+                                <div class="menu-header">
+                                    <h2 class="section-title">Nossas bebidas</h2>
+                                </div>
+
+                                    <!--Grid de bebidas-->
+                                    <div class="drinks-grid"> 
+                                    
+
+                                    <div class="drinks-card" onclick="location.href='refrigerantes.html'">
+                                        <img src="refri.JPEG" alt="refrigerante">
+                                        <div class="drinks-info">
+                                            <h3>Refrigerantes</h3>
+                                            <p>Refresque-se com nossas opções geladinhas! Perfeitas para acompanhar qualquer prato.</p>
+                                            <div class="drinks-price">7,90R$ </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Opçãodois-->
+                                    
+                                    <div class="drinks-card" onclick="location.href='soda.html'"> 
+                                        <img src="soda.JPEG" alt="Soda Italiana">
+                                        <div class="drinks-info">
+                                            <h3>Sodas italianas</h3>
+                                            <p>Soda Italiana: borbulhante, colorida e cheia de sabor! Um toque doce e refrescante para alegrar seu dia.</p>
+                                            <div class="drinks-price">18,99R$ </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Opção três-->
+                                    <div class="drinks-card" onclick="location.href='Café.html'"> 
+                                        <img src="Café.JPEG" alt="Café">
+                                        <div class="drinks-info">
+                                            <h3>Cafés</h3>
+                                            <p>Cafés para todos os gostos: do espresso intenso ao latte cremoso, escolha seu momento de sabor.</p>
+                                            <div class="drinks-price">A partir de 6,00R$</div>
+                                        </div>
+                        
+                            </section>
+                            <!-- Rodapé -->
+    <footer class="footer">
+        <p>Endereço: Via Panoramica, 60123 Ancona AN, Itália</p>
+        <p>Telefone: (619) 83456-5432</p>
+        <p>Redes sociais: @belamassapanificadora</p>
+    </footer>
+
+
+
+                
+    
+</body>
+</html>
