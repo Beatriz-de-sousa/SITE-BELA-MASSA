@@ -6,7 +6,7 @@
     <title>PANIFICADORA BELA MASSA</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="shortcut icon" href="favicon-32x32.png">
+    <link rel="shortcut icon" href="android-chrome-192x192.png">
 </head>
 <body>
     <!--CABEÇALHO DO SITE-->
@@ -16,7 +16,7 @@
             <!--Logo do hotel-->
             <div class="text-logo">
                 <h1 class="logoh1">BELA MASSA</h1>
-                <p class="subtitulo">|Pani e gastronômia</p>
+                <p class="subtitulo">| Pani e gastronomia |</p>
         </div>
          <img src="logo certo.png" alt="logo" class="logo-img">
         </div>
@@ -53,7 +53,7 @@
                         
                
                 <li class="dropdown">
-                    <a href="#Locationandcontacts" class="dropbtn">Localização </a>
+                    <a href="#Locationandcontacts" class="dropbtn">Localização & contato </a>
                     <div class="dropdown-content"></div>
 
 
@@ -61,15 +61,17 @@
                 </li>
                 
 <li>
-  <a href="javascript:void(0)" onclick="toggleCart()">
-    🛒 <span id="cart-count">0</span>
-  </a>
-</li>
-              
+    <div class="trilho" id="trilho">
+                        <div class="indicador"></div>
+                    </div>
+                </li>
             </ul>
         </nav>
         </div>
     </header>
+
+              
+ 
     <!--SEÇÃO PRINCIPAL (HERO)-->
     <section id="home" class="hero"> <!--Section=Seção-->
         <div class="hero-content">
@@ -92,44 +94,11 @@
     </section>
 
 
-   
-
-  
 
             <!--Grid de menu-->
             <div class="menu-grid">
-                
 
-        
-    
-                
-            
-                            
-                          
-
-                            
-                        
-
-
-
-<div id="cart" class="cart">
-    <div class="cart-header">
-        <h2>🛒 Carrinho</h2>
-        <button onclick="toggleCart()">Fechar</button>
-    </div>
-    <div id="cart-items"></div> <!-- Onde os itens vão aparecer -->
-   
-    <p>>Total: R$ <span id="cart-total">0.00</span></p>
-</div>
-    </div>
-</div>
-</section>
-
-            </div>
-        </div>
      
-        
-
     <!-- Rodapé -->
     <footer>
         <p>Endereço: Via Panoramica, 60123 Ancona AN, Itália</p>

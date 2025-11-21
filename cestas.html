@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cestas e kits</title>
     <link rel="stylesheet" href="estilo.css">
+        <link rel="shortcut icon" href="android-chrome-192x192.png">
 </head>
 <body>
     <header class="header">
     <div class="container logo-container">
       <div class="text-logo">
         <h1 class="logoh1">BELA MASSA</h1>
-        <p class="subtitulo">| Pani e Gastronomia |</p>
+        <p class="subtitulo">| Pani e gastronomia |</p>
       </div>
       <img src="logo certo.png" alt="logo" class="logo-img">
     </div>
@@ -40,109 +41,196 @@
                             <li class="dropdown">
                                 <a href="cestas.html" class="dropbtn">Cestas e kits</a>
                                 <div class="dropdown-content">
+                                    <a href="#products">Cestas</a>
+                                    <a href="#Kits">Kits</a>
+                                </div>
 
                                     <li><a href="#Locationandcontacts"></a></li>
                                     <li class="dropdown">
-                                        <a href="localização.html" class="dropbtn">Localização</a>
+                                        <a href="localização.html" class="dropbtn">Localização & contato</a>
                                         <div class="dropdown-content"></div>
-
-
-       
-
-      
-      </ul>
-    </nav>
-  </header>
-   <!-- Seção de produtos (Cestas e Kits) -->
-        <section class="products" id="products">
-            <h2 class="section-title">Cestas e Kits</h2>
-            <div class="menu-header"></div>
-            <h2 class="section-title">Nossas Cestas</h2>
-
-            <!-- Grade de produtos -->
-            <div class="produtos-container">
-
-                <!-- Card de produto individual -->
-                <div class="produto-card">
-                    <img src="cesta-CM.jpg" alt="Cesta Tradicional">
-                    <h2>Cesta Tradicional</h2>
-                    <p>A mais tradicional e completa.</p>
-                    <p>Conteúdo típico:</p>
-                    <ul class="produto-lista">
-                        <li>Pães variados (francês, de queijo, croissant)</li>
-                        <li>Frios (presunto, queijo, peito de peru)</li>
-                        <li>Manteiga e geleia</li>
-                        <li>Bolo simples ou fatias de bolo</li>
-                        <li>Frutas (maçã, banana, uva)</li>
-                        <li>Café solúvel ou suco</li>
-                        <li>Itens decorativos (xícara, guardanapo, flores)</li>
-                    </ul>
-                    <span class="preco">R$ 280</span>
-                </div>
-
-                <div class="produto-card">
-                    <img src="Cesta-cháTarde.jpg" alt="Cesta Leve">
-                    <h2>Cesta Leve</h2>
-                    <p>Mais leve e refinada.</p>
-                    <p>Conteúdo:</p>
-                    <ul class="produto-lista">
-                        <li>Mini pães e biscoitos</li>
-                        <li>Torradas e bolachinhas amanteigadas</li>
-                        <li>Chá, mel e geleia</li>
-                        <li>Bolos pequenos ou muffins</li>
-                        <li>Frutas secas</li>
-                    </ul>
-                    <span class="preco">R$ 30</span>
-                </div>
-
-                <div class="produto-card">
-                    <img src="Café.JPEG" alt="Cesta Natural">
-                    <h2>Cesta Natural</h2>
-                    <p>Ideal para quem prefere produtos saudáveis.</p>
-                    <ul class="produto-lista">
-                        <li>Pães integrais e sem glúten</li>
-                        <li>Mix de castanhas e frutas desidratadas</li>
-                        <li>Suco natural ou água de coco</li>
-                        <li>Granola, iogurte e mel</li>
-                        <li>Cookies integrais</li>
-                    </ul>
-                    <span class="preco">R$ 85</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção de kits -->
-        <section>
-            <h2 class="section-title">KITS</h2>
-            <div class="card-formato">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h2>Kit festa</h2>
-                    <p>Ideal para quem prefere produtos saudáveis.</p>
-                    <ul class="produto-lista">
-                        <li>Pães integrais e sem glúten</li>
-                        <li>Mix de castanhas e frutas desidratadas</li>
-                        <li>Suco natural ou água de coco</li>
-                        <li>Granola, iogurte e mel</li>
-                        <li>Cookies integrais</li>
-                    </ul>
-                    <span class="preco">R$ 85</span>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>TESTE</h2>
-                            <p>TESTE P</p>
-                            <p>TESTE P</p>
-                            
-                        </div>
+                                        
+                    </div>  
+                </li>
+                
+<li>
+    <div class="trilho" id="trilho">
+                        <div class="indicador"></div>
                     </div>
-                </div>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+     
+
+
+    <!-- ========== SEÇÃO DE PRODUTOS (CESTAS) ========== -->
+  <!-- Bloco principal de cestas e kits -->
+  <section class="products" id="products">
+    <!-- Título da seção -->
+    <h2 class="section-title">Cestas e Kits</h2>
+    <!-- Subtítulo / segunda linha explicativa -->
+    <h2 class="section-title">Nossas Cestas</h2>
+
+    <!-- Grid que contém os cards de produtos -->
+    <div class="produtos-container">
+
+      <!-- ---------- CESTA 1: Cesta Tradicional ---------- -->
+      <div class="produto-card">
+        <!-- Imagem representativa da cesta -->
+        <img src="cesta-tradicional.jpg" alt="Cesta Tradicional">
+        <h2>Cesta Tradicional</h2>
+        <p>A mais tradicional e completa.</p>
+
+        <!-- Lista do conteúdo sugerido da cesta -->
+        <ul class="produto-lista">
+          <li>Pães variados</li>
+          <li>Frios</li>
+          <li>Manteiga e geleia</li>
+          <li>Bolo simples</li>
+          <li>Frutas</li>
+          <li>Café ou suco</li>
+          <li>Itens decorativos</li>
+        </ul>
+
+        <!-- PREÇO atualizado para um valor coerente -->
+        <span class="preco">R$ 280</span>
+      </div>
+
+      <!-- ---------- CESTA 2: Cesta Leve ---------- -->
+      <div class="produto-card">
+        <img src="cesta-leve.jpg" alt="Cesta Leve">
+        <h2>Cesta Leve</h2>
+        <p>Mais leve e refinada.</p>
+
+        <ul class="produto-lista">
+          <li>Mini pães</li>
+          <li>Bolachinhas amanteigadas</li>
+          <li>Chá + mel</li>
+          <li>Muffins</li>
+          <li>Frutas secas</li>
+        </ul>
+
+        <!-- PREÇO ajustado (anterior estava muito baixo) -->
+        <span class="preco">R$ 130</span>
+      </div>
+
+      <!-- ---------- CESTA 3: Cesta Natural ---------- -->
+      <div class="produto-card">
+        <img src="cesta-natural.jpg" alt="Cesta Natural">
+        <h2>Cesta Natural</h2>
+        <p>Ideal para quem prefere produtos saudáveis.</p>
+
+        <ul class="produto-lista">
+          <li>Pães integrais</li>
+          <li>Castanhas</li>
+          <li>Água de coco</li>
+          <li>Granola + mel</li>
+          <li>Cookies integrais</li>
+        </ul>
+
+        <!-- PREÇO mantido (valor coerente para cesta saudável) -->
+        <span class="preco">R$ 85</span>
+      </div>
+
+    </div>
+  </section>
+
+
+                <!-- ========== SEÇÃO DE KITS ========== -->
+  <section>
+    <section class="Kits" id="Kits"></section>
+    <h2 class="section-title">Kits</h2>
+
+    <!-- layout em cards flip (frente/verso) -->
+    <div class="card-formato">
+
+      <!-- ---------- KIT PÁSCOA ---------- -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+
+          <!-- Frente do card (apresentação) -->
+          <div class="flip-card-front-p">
+            <img src="cesta-pascoa.png" alt="Kit Páscoa">
+            <h2>Kit Páscoa</h2>
+            <p>Cestas temáticas com ovos e bombons finos.</p>
+            <!-- PREÇO atualizado para refletir itens de chocolate e pelúcia -->
+            <span class="preco">R$ 120</span>
+          </div>
+
+          <!-- Verso do card (conteúdo / alergênicos) -->
+          <div class="flip-card-back-p">
+            <h2>Conteúdo sugerido:</h2>
+            <p>- Ovo de chocolate</p>
+            <p>- Bombons sortidos</p>
+            <p>- Pelúcia opcional</p>
+            <p>- Cartão personalizado</p>
+            <!-- Observação de alergênicos (sempre importante em produtos alimentares) -->
+            <p><strong>Alergênicos:</strong> Pode conter leite, soja, amendoim e derivados de trigo.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ---------- KIT NATAL ---------- -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+
+          <div class="flip-card-front-n">
+            <img src="cesta-natal5.jpg" alt="Kit Natal">
+            <h2>Kit Natal</h2>
+            <p>Panetone, cookies, geleias e castanhas.</p>
+            <!-- PREÇO ajustado considerando itens sazonais -->
+            <span class="preco">R$ 150</span>
+          </div>
+
+          <div class="flip-card-back-n">
+            <h2>Conteúdo sugerido:</h2>
+            <p>Panetone</p>
+            <p>Cookies artesanais</p>
+            <p>Geleia/mel</p>
+            <p>Frutas secas</p>
+            <p><strong>Alergênicos:</strong> Pode conter glúten, ovos, leite e castanhas.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ---------- KIT ANIVERSÁRIO ---------- -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+
+          <div class="flip-card-front-a">
+            <img src="cesta-aniversário.jpg" alt="Kit Aniversário">
+            <h2>Kit Aniversário</h2>
+            <p>Mini bolos, docinhos e itens personalizados.</p>
+            <!-- PREÇO atualizado para refletir itens personalizados -->
+            <span class="preco">R$ 100</span>
+          </div>
+
+          <div class="flip-card-back-a">
+            <h2>Conteúdo sugerido:</h2>
+            <p>Docinhos tradicionais</p>
+            <p>Cupcakes</p>
+            <p>Cartão temático</p>
+            <p><strong>Alergênicos:</strong> Pode conter leite, ovo, glúten e castanhas.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
                 <!-- Rodapé -->
     <footer>
         <p>Endereço: Via Panoramica, 60123 Ancona AN, Itália</p>
         <p>Telefone: (619) 83456-5432</p>
         <p>Redes sociais: @belamassapanificadora</p>
     </footer>
+
+      <!-- Script javascript (ex.: troca de modo escuro, trilho, etc.) -->
+  <script src="novoscripts.js"></script>
 
 
     

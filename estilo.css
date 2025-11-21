@@ -8,9 +8,9 @@
 /*ESTILOS GERAIS*/ 
 body {
     font-family: 'Times New Roman', Times, serif; /*DEFINE A FONTE PADRÃO */
-    line-height: 1.6; /*Espaçamento entre linhas */
+    line-height: 1.3; /*Espaçamento entre linhas */
     color: #980303d7; /*Cor do texto */
-    padding-top: 120px; /*dá um “respiro” no topo (porque o cabeçalho é fixo).*/
+    padding-top: 130px; /*dá um “respiro” no topo (porque o cabeçalho é fixo).*/
     background-color: #e7e9af; /*Cor de fundo da pagina*/
 }
 
@@ -121,7 +121,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #ffd072;
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0,0, al0.2);
     z-index: 1;
@@ -131,7 +131,7 @@ body {
 }
 
 .dropdown-content a {
-    color: rgb(19, 7, 7);
+    color: rgb(0, 0, 0);
     padding: 12px 16px;
     display: block;
     text-decoration: none;
@@ -252,17 +252,6 @@ body {
         box-shadow: 0 10px 30px rgba(0,0,0,0.1); /*Sombra*/
     }
 
-
-    .produtos-container,
-.kits-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 60px 20px;
-}
-
 /* CARD  */
 .produto-card {
   background: #C58B41;
@@ -324,94 +313,245 @@ body {
 }
 
 /* ======= TRILHO (TOGGLE MODO) ======= */
-.trilho {
-  width: 50px;
-  height: 30px;
-  background-color: #4d4d4d;
-  border-radius: 150px;
-  position: relative;
-  cursor: pointer;
-  caret-color: transparent; /* remove caret piscante se for focável */
-}
+       .trilho {
+         margin-left: 800px;
+         width: 50px;
+         height: 30px;
+         background-color: #4d4d4d;
+         border-radius: 150px;
+         position: relative;
+         cursor: pointer;
+         caret-color: transparent;
+         /* remove caret piscante se for focável */
+       }
 
-.trilho .indicador {
-  width: 30px;
-  height: 30px;
-  background-color: rgb(0, 0, 0);
-  border-radius: 50%;
-  transform: scale(.9);
-  position: absolute;
-  left: 0;
-  transition: .5s;
-  background-image: url('imagens/dark_mode_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg');
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+       .trilho .indicador {
+         width: 30px;
+         height: 30px;
+         left: 0px;
+         border-radius: 50%;
+         transform: scale(.9);
+         position: absolute;
 
-/* Estado quando ativo/alternado (classe adicionada via JS: .trilho.dark) */
-.trilho.dark .indicador {
-  left: 20px;
-  background-color: white;
-  background-image: url('imagens/light_mode_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
-}
+         transition: .5s;
+         background-color: #ffffff;
+         ;
+         background-size: 80%;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-image: url('../imgs/cestas/light_mode_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
+       }
 
-.trilho.dark {
-  background-color: #c3c3c3;
-}
+       /* Estado quando ativo/alternado (classe adicionada via JS: .trilho.dark) */
+       .trilho.dark .indicador {
 
-/* Exemplo simples de alteração de fundo quando o body ganha .dark (JS) */
-body.dark {
-  background-color: #d4a017;
-}
+         left: 20px;
+         background-color: #000000;
+         background-image: url('../imgs/cestas/dark_mode_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg');
 
-.card-formato{
+       }
+
+       .trilho.dark {
+         background-color: #292626;
+       }
+
+       /* Exemplo simples de alteração de fundo quando o body ganha .dark (JS) */
+       body.dark {
+         background-color: #060324;
+       }
+
+
+       body.dark .nav-list a {
+         color: #fff;
+       }
+
+       body.dark footer {
+         background-color: black;
+        
+       }
+       body.dark footer p{
+         color: white;
+       }
+       /*--------sobre--------*/
+
+       body.dark .about {
+         background-color: rgb(14, 17, 49);
+       }
+
+       body.dark .about p {
+         color: white;
+       }
+
+       body.dark .about h2 {
+         color: #fff;
+       }
+
+       body.dark .section-title::after {
+         background-color: #c3c3c3;
+       }
+
+       /*--------------MENU---------------------*/
+
+       body.dark .section-title {
+         color: wheat;
+       }
+    
+       body,
+       footer,
+       .about,
+       .section-title,
+       .section-title::after {
+         transition: background-color 0.6s ease;
+       }
+
+       .about p,
+       .about h2,
+       footer p,
+       .nav-list a {
+         color: 0.4s ;
+       }
+
+
+/*-- .produtos-container e .kits-container:
+     - grid flexível para os cards (wrap para quebrar em múltiplas linhas) --*/
+.produtos-container,
+.kits-container {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-   gap: 60px;             
-  padding: 40px 20px;   
+  gap: 30px;
+  padding: 60px 20px;
 }
 
+/*-- .produto-card:
+     - cartão visual de produto com cor de fundo, borda arredondada e sombra --*/
+.produto-card {
+  background: #C58B41;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*-- Hover do card: aumenta levemente e acentua sombra --*/
+.produto-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/*-- Imagem do card: ocupando toda a largura do card --*/
+.produto-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/*-- Título do produto dentro do card --*/
+.produto-card h2 {
+  margin: 15px 0 10px;
+  font-size: 20.8px;
+  color: #6d0a0a;
+}
+
+/*-- Descrição do produto dentro do card --*/
+.produto-card p {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0 20px 10px;
+}
+
+/*-- .produto-lista:
+     - lista dos itens que compõem a cesta (sem marcadores) --*/
+.produto-lista {
+  list-style: none;
+  padding-left: 20px;
+  /* mantém um recuo visual */
+  margin: 0 20px 15px;
+}
+
+/*-- itens da lista com pequena margem entre linhas --*/
+.produto-lista li {
+  text-align: start;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #fbeaaf;
+}
+
+/*-- .preco:
+     - estilo do preço mostrado no card --*/
+.produto-card .preco {
+  display: inline-block;
+  color: #e4ea9baf;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/*-- .card-formato:
+     - layout para a seção de kits (alinha múltiplos flip-cards) --*/
+.card-formato {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+/*-- .flip-card:
+     - contêiner que define tamanho e perspectiva para o efeito 3D --*/
 .flip-card {
   width: 300px;
   height: 450px;
   perspective: 1000px;
 }
 
-.flip-card-inner{
+/*-- .flip-card-inner:
+     - camada interna que será rotacionada para mostrar o verso --*/
+.flip-card-inner {
   position: relative;
   transition: 1s;
-   width: 100%;
+  width: 100%;
   height: 100%;
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner{
+/*-- Hover: quando o mouse estiver sobre o .flip-card, gira a camada interna (efeito flip) --*/
+.flip-card:hover .flip-card-inner {
   transform: rotateY(-180deg);
-
 }
-.flip-card .flip-card-back{
+
+/*-- .flip-card .flip-card-back:
+     - define que o lado de trás já está rotacionado para encaixar no flip --*/
+.flip-card .flip-card-back {
   transform: rotateY(-180deg);
   background-color: #eb0000;
 }
 
-.flip-card .flip-card-front{
+/*-- .flip-card .flip-card-front:
+     - estilo base da face da frente (branco por padrão) --*/
+.flip-card .flip-card-front {
   background-color: #ffffff;
 }
-.flip-card-front, .flip-card-back
-{
+
+/*-- .flip-card-front / .flip-card-back:
+     - faces posicionadas absolutamente, com backface-visibility para esconder a face traseira
+       quando estiver virada para nós --*/
+.flip-card-front,
+.flip-card-back {
   position: absolute;
-   width: 100%;
+  width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  
 }
 
+/*-- Títulos e parágrafos dentro do flip-card (estilo genérico) --*/
 .flip-card h2 {
   margin: 15px 0 10px;
   font-size: 20.8px;
@@ -425,12 +565,6 @@ body.dark {
 }
 
 
-.flip-card {
-  list-style: none;
-  padding-left: 20px; 
-  margin: 0 20px 15px;
-  
-}
 
 .flip-card li {
   text-align: start;
@@ -439,14 +573,233 @@ body.dark {
   color: #111;
 }
 
-
+/*-- preço dentro dos flip-cards --*/
 .flip-card .preco {
   display: inline-block;
-  color: #d4a017;
+  color: #050505;
   font-weight: bold;
   font-size: 1rem;
   margin-bottom: 20px;
 }
+
+/*--------------------- FACE PÁSCOA ---------------------*/
+/*-- imagens da frente/verso do kit Páscoa --*/
+.flip-card-front-p img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.flip-card-back-p img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/*-- alinhamento do conteúdo da frente Páscoa --*/
+.flip-card-front-p {
+  text-align: center;
+}
+
+/*-- título e texto da frente Páscoa --*/
+.flip-card-front-p h2 {
+  margin: 15px 0 10px;
+  font-size: 20.8px;
+  color: #6d0a0a;
+}
+
+.flip-card-front-p p {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0 20px 10px;
+  text-align: justify;
+}
+
+/*-- título e texto do verso Páscoa --*/
+.flip-card-back-p h2 {
+  margin: 15px 0 10px;
+  font-size: 20.8px;
+  color: #6d0a0a;
+}
+
+.flip-card-back-p p {
+  font-size: 15px;
+  color: #292827ce;
+  margin: 0 20px 10px;
+}
+
+/*-- verso Páscoa já rotacionado e com imagem de fundo temática --*/
+.flip-card .flip-card-back-p {
+  transform: rotateY(-180deg);
+  background-image: url(fundo-pascoa4.jpg)
+}
+
+/*-- frente Páscoa com cor de fundo: mantém estética do card --*/
+.flip-card .flip-card-front-p {
+  background-color: #C58B41;
+}
+
+/*-- faces Páscoa posicionadas para o efeito flip (absolutas, mesmas dimensões) --*/
+.flip-card-front-p,
+.flip-card-back-p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+/*--------------------- FACE NATAL ---------------------*/
+/*-- imagens e dimensões específicas para o kit Natal --*/
+.flip-card-front-n img {
+  width: 100%;
+  height: 200px;
+}
+
+.flip-card-back-n img {
+  width: 100%;
+  height: 100px;
+}
+
+/*-- alinhamento e estilo da frente Natal --*/
+.flip-card-front-n {
+  text-align: center;
+}
+
+.flip-card-front-n h2 {
+  margin: 15px 0 10px;
+  font-size: 20.8px;
+  color: #6d0a0a;
+}
+
+.flip-card-front-n p {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0 20px 10px;
+  text-align: justify;
+}
+
+/*-- estilo do verso Natal --*/
+.flip-card-back-n h2{
+  margin: 15px 0 10px;
+  font-size: 20.8px;
+  color: #360606;
+}
+.flip-card-back-n p {
+  font-size: 15px;
+  color: #04083b;
+  margin: 0 20px 10px;
+}
+
+/*-- verso Natal com imagem de fundo temática e centralizada --*/
+.flip-card .flip-card-back-n {
+  transform: rotateY(-180deg);
+  background-image: url('fundo-natal3.jpg');
+  background-position: center;
+}
+
+/*-- frente Natal com cor de fundo coerente com o layout --*/
+.flip-card .flip-card-front-n {
+  background-color: #C58B41;
+}
+
+/*-- faces Natal posicionadas para o flip --*/
+.flip-card-front-n,
+.flip-card-back-n {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+/*--------------------- FACE ANIVERSÁRIO ---------------------*/
+/*-- imagens e tamanhos para o kit Aniversário --*/
+.flip-card-front-a img {
+  width: 100%;
+  height: 220px;
+}
+
+.flip-card-back-a img {
+  width: 100%;
+  height: 230px;
+}
+
+/*-- alinhamento e estilo da frente Aniversário --*/
+.flip-card-front-a {
+  text-align: center;
+}
+
+.flip-card-front-a h2 {
+  margin: 15px 0 10px;
+  font-size: 20.8px;
+  color: #6d0a0a;
+}
+
+.flip-card-front-a p {
+  text-align: justify;
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0 20px 10px;
+}
+
+/*-- estilo do verso Aniversário --*/
+.flip-card-back-a h2 {
+  margin: 15px 0 10px;
+  font-size: 20.8px;
+  color: #6d0a0a;
+}
+
+.flip-card-back-a p{
+ font-size: 15px;
+  color: #110e0e;
+  margin: 0 20px 10px;
+}
+
+/*-- verso Aniversário com imagem de fundo temática --*/
+.flip-card .flip-card-back-a {
+  transform: rotateY(-180deg);
+  background-image: url('fundo-aniversario5.jpg');
+}
+
+/*-- frente Aniversário cor de fundo e posição da imagem --*/
+.flip-card .flip-card-front-a {
+  background-color: #C58B41;
+  background-position: center;
+}
+
+/*-- faces Aniversário posicionadas para o efeito flip --*/
+.flip-card-front-a,
+.flip-card-back-a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+/*-- RODAPÉ: cor de fundo, alinhamento e espaçamento --*/
+footer {
+  background-color: #d00202;
+  position: relative;
+  max-width: 100vw;
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/*-- parágrafos do footer: margem e cor do texto --*/
+footer p {
+  margin: 5px 0;
+  color: black;
+}
+
 
 
 
@@ -635,7 +988,7 @@ body.dark {
 
      .drinks-info h3 {
         color: #6d0a0a;
-        margin-bottom: 0.5rem; /* Espaçamento inferior*/
+        margin-bottom: 0.2rem; /* Espaçamento inferior*/
         font-size: 1.3rem;
      }
 
@@ -650,53 +1003,6 @@ body.dark {
         font-weight: bold; /*Texto em negrito*/
      }
 
-    
-     
-
-
-
-
-    
-
-
-    .fa-cart-shopping {
-        font-size: 20px;
-        color: #333;
-        
-    }
-    #contadorCarrinho {
-        background-color: rgb(34, 33, 33);
-        color: white;
-        border-radius: 50%;
-        padding: 2px 6px;
-        font-size: 12px;
-        margin-left: 5px;
-    }
-
-    .modal {
-        display: none; /*escondido por padrão*/
-        position: fixed;
-        z-index: 10;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-
-    }
-
-    .modal-content {
-        background-color: #fff;
-        margin: 10% auto;
-        padding: 20px;
-        border-radius: 10px;
-        width: 80%;
-        max-width: 500px;
-        position: relative;
-        color: #333333;
-        
-    }
-
     .close {
         position: absolute;
         top: 15px;
@@ -707,21 +1013,7 @@ body.dark {
         font-weight: bold;
     }
 
-    .product-card button {
-        margin-top: 10px;
-        padding: 8px 12px;
-        background-color: #f10303;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
 
-    }
-    .product-card button:hover {
-        background-color: #d00202;
-    }
 
    
     /* Parte do Jeferson* Rodapé*/
@@ -750,6 +1042,57 @@ body.dark {
             border-radius: 10px;
             text-align: center;
         }
+        .mapbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+        form {
+    width: 350px;
+    margin: 75px auto;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #6b0a0a;
+    box-shadow: 0 0 5px rgba(74, 141, 255, 0.4);
+}
+
+button {
+    padding: 12px;
+    background: #880b0b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #950808;
+}
 
 
 

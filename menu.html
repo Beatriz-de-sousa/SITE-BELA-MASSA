@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardapios da pagina</title>
+    <title>Cardapios</title>
     <link rel="stylesheet" href="estilo.css">
+        <link rel="shortcut icon" href="android-chrome-192x192.png">
 </head>
 
 <body>
@@ -12,10 +13,11 @@
     <div class="container logo-container">
       <div class="text-logo">
         <h1 class="logoh1">BELA MASSA</h1>
-        <p class="subtitulo">| Pani e Gastronomia |</p>
+        <p class="subtitulo">| Pani e gastronomia |</p>
       </div>
       <img src="logo certo.png" alt="logo" class="logo-img">
     </div>
+    
          <nav class="nav">
             <ul class="nav-list">
                 <li><a href="#home"></a></li>
@@ -51,24 +53,30 @@
 
                                     <li><a href="#Locationandcontacts"></a></li>
                                     <li class="dropdown">
-                                        <a href="localização.html" class="dropbtn">Localização</a>
+                                        <a href="localização.html" class="dropbtn">Localização & contato</a>
                                         <div class="dropdown-content"></div>
-
-       
-
-        
-    
-      </ul> 
-    </nav>
-  </header>
-  
-                    
+                                                                               
+                    </div>  
+                </li>
+                
+<li>
+    <div class="trilho" id="trilho">
+                        <div class="indicador"></div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+     
+     
 
                
                      <!--Menu -->
     <section id="menu" class="menu">
         <div class="container">
             <h2 class="section-title">Menu</h2>
+            
             
         
             
@@ -79,6 +87,7 @@
     <section id="entraces" class="entraces">
         <div class="menu-header">
             <h2 class="section-title">Nossas entradas</h2>
+            
             
         </div>
         
@@ -96,6 +105,7 @@
                         <div class="entraces-price"> 20,00R$</div>
                     </div>
                 </div>
+                
                 <!--Entrada2-->
                 <div class="entraces-card">
                     <img src="Pao de queijo2.jpg" alt="Pão de queijo mineiro">
@@ -103,14 +113,9 @@
                         <h3>Pão de queijo</h3>
                         <p>Clássico mineiro, crocante por fora e macio por dentro. Feito com queijo de verdade e aquele sabor caseiro que derrete na boca.</p>
                         <div class="entraces-price"> 8,00R$ </div>
-                        <button onclick="addToCart ('Pão de queijo', 8.00)">Adicionar ao carrinho</button>
-                         <div id="entraces" class="modal">
-                                        <div class="modal-content">
-                                            <span class="close" onclick="closeModal('entradas')"
-                                            >&times;</span>
-                                             <div class="entraces-grid"></div>
-                                        </div>
-                         </div>
+                        
+                                        
+                         
                         
                     </div>
                 </div> 
@@ -229,10 +234,14 @@ Tradicional e irresistível, nosso pão francês é assado diariamente para gara
                             <section id="drinks" class="drinks">
                                 <div class="menu-header">
                                     <h2 class="section-title">Nossas bebidas</h2>
-                                </div>
+                                
+                                
+                                </section>
+                            
 
                                     <!--Grid de bebidas-->
                                     <div class="drinks-grid"> 
+                                        
                                     
 
                                     <div class="drinks-card" onclick="location.href='refrigerantes.html'">
@@ -250,21 +259,26 @@ Tradicional e irresistível, nosso pão francês é assado diariamente para gara
                                         <img src="soda.JPEG" alt="Soda Italiana">
                                         <div class="drinks-info">
                                             <h3>Sodas italianas</h3>
-                                            <p>Soda Italiana: borbulhante, colorida e cheia de sabor! Um toque doce e refrescante para alegrar seu dia.</p>
+                                            <p>Soda Italiana: Colorida e cheia de sabor! Um toque doce e refrescante para alegrar seu dia.</p>
                                             <div class="drinks-price">18,99R$ </div>
                                         </div>
                                     </div>
+                                    
 
                                     <!--Opção três-->
-                                    <div class="drinks-card" onclick="location.href='Café.html'"> 
+                                    <div class="drinks-card" onclick="location.href='Café.html'">
                                         <img src="Café.JPEG" alt="Café">
                                         <div class="drinks-info">
                                             <h3>Cafés</h3>
                                             <p>Cafés para todos os gostos: do espresso intenso ao latte cremoso, escolha seu momento de sabor.</p>
                                             <div class="drinks-price">A partir de 6,00R$</div>
                                         </div>
-                        
+                                    </div>
                             </section>
+                            <br>
+<br>
+<br>
+            
                             <!-- Rodapé -->
     <footer class="footer">
         <p>Endereço: Via Panoramica, 60123 Ancona AN, Itália</p>
@@ -273,7 +287,7 @@ Tradicional e irresistível, nosso pão francês é assado diariamente para gara
     </footer>
 
 
-
+<script src="novoscripts.js"></script>
                 
     
 </body>
