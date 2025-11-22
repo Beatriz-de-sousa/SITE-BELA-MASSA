@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    text-align: center;
+    background-color: #83161657;
+    background-image: url('pexels-fariphotography-905847.jpg');
+    color: #fff7f7e8;
+}
+.Cardapio-titulo {
+text-align: center;
+    font-size: 3Rem;
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    margin: 40px 0 20px;
+}
