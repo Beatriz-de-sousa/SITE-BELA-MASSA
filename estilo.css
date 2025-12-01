@@ -1033,6 +1033,18 @@ footer p {
             margin: 5px 0;
             color: black;
         }
+        .social-links a {
+    font-size: 30px;
+    margin: 0 12px;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #9a1919; /* dourado no hover */
+    transform: scale(1.2);
+}
+
 
          .mapbox iframe {
             width: 100%;
